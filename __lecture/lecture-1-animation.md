@@ -133,6 +133,7 @@ render(<Demos.AnimationEx2 />);
 // render(<App />)
 
 const Button = styled.button`
+  cursor: pointer;
   position: relative;
   width: 300px;
   height: 80px;
@@ -147,6 +148,10 @@ const ButtonLayer = styled.div`
   top: 0;
   left: 0;
   border-radius: 4px;
+  
+  &:hover {
+    transform: translate(-10px, -10px);
+  }
 `;
 
 const Surface = styled(ButtonLayer)`
